@@ -135,7 +135,7 @@ function openBot(bot) {
   $("bot-title").textContent = bot.emoji + " " + bot.name;
   $("messages").innerHTML = "";
   histories[bot.id].forEach((m) => addMessage(m.role, m.text));
-  if (!histories[bot.id].length) addMessage("bot", "Hi! I’m " + bot.name + ". How can I help?");
+  if (!histories[bot.id].length) addMessage("bot", "Hi! How can I help?");
   show("chat-view");
   $("input").focus();
 }
